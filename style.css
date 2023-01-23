@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    color: white;
+}
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url('images/BG.jpg');
+    box-shadow: inset 0 0 100px 5px rgba(0,0,0,0.9);
+    background-size: cover;
+    padding: 15px 4%;
+    position: relative;
+}
+.home-logo {
+    width: 140px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.language {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 0.5em;
+}
+.before {
+    position: relative;
+    left: 1.4em;
+    width: 15px;
+}
+.after {
+    position: relative;
+    left: -1.4em;
+    width: 10px;
+}
+select {
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: .5em 1.8em;
+    border-radius: 2px;
+}
+select option {
+    background: rgb(198, 197, 197);
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border-radius: 2px;
+    padding: .5em 1em;
+}
+
+.header-container {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header-container h1 {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 600;
+    max-width: 600px;
+    margin-bottom: 15px;
+}
+.header-container h2 {
+    font-size: 1.625rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.header-container h3 {
+    font-size: 1.2rem;
+    max-width: none;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+.email-signup {
+    background: white;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.email-signup input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    height: 40px;
+    margin: 0;
+    margin-left: 20px;
+}
+.email-signup .floating-label {
+    color: #8c8c8c;
+    font-size: 16px;
+    position: absolute;
+    top: 91%;
+    left: 20px;
+    cursor: text;
+    transform: translateY(-50%);
+    transition: font .1s ease,top .1s ease,transform .1s ease;
+}
+.email-signup button {
+    background-color: red;
+    color: white;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px 30px;
+}
+.email-signup input:focus ~ .floating-label,
+.email-signup input:valid ~ .floating-label {
+  font-size: 11px;
+  top: 85%;
+}
+
+.section-break {
+    width: 100%;
+    height: 10px;
+    border-bottom: 8px solid #222;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+.col {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin: 0 2%;
+    overflow: hidden;
+    min-width:395px;
+}
+.text {
+    margin-top: 10%;
+}
+.text h1 {
+    font-size: 3rem;
+}
+.text h2 {
+    margin-top: 3%;
+    font-size: 1.60rem;
+    font-weight: 400;
+}
+.img-vid-container {
+    width: 400px;
+    margin: auto;
+    position: relative;
+}
+.blank-div {
+    height: 300px;
+}
+.col img {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+}
+.col video {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    width: 73%;
+    top: 20.6%;
+    left: 13%;
+}
+
+.mob-downloading {
+    border: 2px solid #222;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.mob-image {
+    width: 20%;
+    padding: 10px;
+}
+.mob-text {
+    margin-left: 1em;
+}
+.mob-text h2 {
+    font-size: 1.2em;
+}
+.mob-text p {
+    color: blue;
+}
+.mob-gif {
+    width: 15%;
+    margin-left: 4em;
+}
+.mob-image img {
+    position: static;
+}
+.mob-gif img {
+    position: static;
+}  
+
+.v3 video {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    width: 63%;
+    top: 10%;
+    left: 18%;
+}
+
+.faq {
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+.faq h2 {
+    margin-top: 5%;
+    font-weight: 500;
+    font-size: 40px;
+}
+.accodion {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accodion li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accodion li label {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    background-color: #303030;
+    margin-bottom: 2px;
+    position: relative;
+    cursor: pointer;
+}
+.accodion li label::after {
+    content: "+";
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="checkbox"] {
+    display: none;
+}
+.accodion .content {
+    font-size: 1.6rem;
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.accodion input[type="checkbox"]:checked + label + .content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accodion input[type="checkbox"]:checked + label::after {
+    transform: rotate(135deg);
+}
+
+.faq .email-signup {
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+.faq small {
+    font-size: 16px;
+}
+
+footer {
+    padding: 10% 10% 0 10%;
+    display: flex;
+    justify-content: center;
+}
+.footer-container {
+    color: #737373;
+}
+.footer-container p {
+    margin-bottom: 20px;
+}
+.footer-container a {
+    text-decoration: none;
+    color: #737373;
+}
+.footer-container a:hover {
+    color: #737373;
+    text-decoration: underline;
+}
+.footer-list {
+    list-style: none;
+    margin-bottom: 20px;
+}
+.footer-list li {
+    display: inline-block;
+    width: 15em;
+    margin-bottom: 2%;
+}
+.copyright {
+    margin-top: 2%;
+}
+
+@media only screen and (max-width:600px) {
+    .home-logo {
+        width: 100px;
+    }
+    .language {
+        margin-right: 0.1em;
+    }
+    .before {
+        left: 1em;
+        width: 10px;
+    }
+    .after {
+        left: -1em;
+        width: 5px;
+    }
+    select {
+        font-size: 12px;
+        padding: .5em 1.6em;
+    }
+    nav a {
+        padding: .55em 1.2em;
+        font-size: 12px;
+    }
+    .header-container h1 {
+        font-size: 1.6rem;
+        line-height: 30px;
+    }
+    .header-container h2 {
+        font-size: 1.2rem;
+    }
+    .header-container h3 {
+        font-size: 1.2rem;
+    }
+    .email-signup .floating-label {
+        font-size: 12px;
+        top: 93%;
+    }
+    .email-signup button {
+        width: 100px;
+        font-size: 12px;
+        padding: 1.0287em 0px;
+    }
+    .email-signup input:focus ~ .floating-label,
+    .email-signup input:valid ~ .floating-label {
+      font-size: 8px;
+      top: 88%;
+    }
+
+    .text h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        max-width: 11em;
+    }
+    .text h2 {
+        font-size: 1rem;
+        max-width: 250px;
+        text-align: center;
+        margin-left: 7%;
+    }
+    .img-vid-container {
+        width: 300px;
+        margin-left: 5%;
+    }
+    .col video {
+        top: 15%;
+    }
+
+    .box img {
+        margin-left: 0;
+    }
+    .mob-downloading {
+        margin-top: -70px;
+        margin-left: 0;
+    }
+    .mob-text h2 {
+        font-size: .7em;
+    }
+    .mob-text p {
+        font-size: .7em;
+    }
+
+    .v3 video {
+        top: 7%;
+    }
+
+
+    .faq {
+        padding: 10px 2%;
+    }
+    .faq h2 {
+        margin-top: 10%;
+        font-size: 30px;
+    }
+
+    .faq .email-signup {
+        max-width: 300px;
+        margin: 20px 0 30px 30px;
+    }
+    .faq small {
+        font-size: 12px;
+    }
+
+    .accodion {
+        margin: 20px auto;
+    }
+    .accodion li {
+        text-align: left;
+    }
+    .accodion li label {
+        padding: 20px;
+        font-size: 1rem;
+    }
+    .accodion li label::after {
+        font-size: 30px;
+    }
+
+ 
+    .footer-container p {
+        margin-bottom: 15px;
+    }
+    .footer-list {
+        margin-bottom: 15px;
+    }
+    .footer-list li {
+        display: inline-block;
+        width: 8.5em;
+        margin-bottom: 4%;
+    }
+    .copyright {
+        margin-top: 4%;
+    }
+}
