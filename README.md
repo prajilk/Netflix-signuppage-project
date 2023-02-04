@@ -12,3 +12,5 @@ This is the core code from scratch to clone the landing page of Netflix using HT
 
 ## 🔗 Social
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/prajilk/)
+
+### Visit my [website](https://prajilk.github.io)
